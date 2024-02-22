@@ -1,3 +1,153 @@
 .App {
+  text-align: left;
+  /* background-color: blue; */
+}
+
+.App-heading {
+  color: rgba(19,173,137,255);
   text-align: center;
+
+}
+
+.mytodo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.input-mytodo {
+  border: 1px solid rgba(19,173,137,255);
+  border-radius: 5px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.btn-mytodo {
+  background-color: rgba(19,173,137,255);
+  color: white;
+  padding: 12px 50px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+.btn-mytodo:hover {
+  background-color: rgb(0, 255, 195);
+
+}
+
+
+.todolistheader-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.todolistselect-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todolistselect-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.todolistselect-wrapper > select {
+  color: white;
+  font-size: 1.5rem;
+  max-width: 60%;
+  background-color: #ff7d80;
+  border: none;
+  padding: 0px 5px;
+}
+
+.todolistSF-option-all {
+  /* background-color: #ff7d80; */
+}
+
+.todolistSF-option-completed {
+  /* background-color: rgba(19,173,137,255); */
+}
+
+.todolistSF-option-notcompleted {
+  /* background-color: bisque; */
+}
+
+.todolist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ccf5d3;
+  width: 400px;
+  padding: 10px 20px;
+}
+
+
+.todo select {
+  max-width: 30%;
+  color: white;
+  background-color: #ff7d80;
+  margin-left: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.todo > input {
+  border: 1px solid rgba(19,173,137,255);
+  border-radius: 5px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.todo-task-name {
+  word-wrap: break-word;
+}
+
+.todo-task-description {
+  word-wrap: break-word;
+}
+
+.btn {
+  padding: 12px 30px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-editTodo, .btn-saveTodo {
+  background-color: rgba(19,173,137,255);
+}
+
+.btn-editTodo:hover, .btn-saveTodo:hover {
+  background-color: rgb(0, 255, 195)
+}
+
+.btn-deleteTodo {
+  background-color: #cf5f1e;
+}
+
+.btn-deleteTodo:hover {
+  background-color: #ff5e00;;
+}
+
+.todo-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
